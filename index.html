@@ -9,9 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- DaisyUi and Tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <style type="text/tailwindcss">
         @layer base {
           :root {
@@ -28,6 +31,9 @@
             .text-color-primary{
                 color: var(--color-primary);
             }
+            .bg-color-primary{
+                background-color: var(--color-primary);
+            }
             .bg-color-secondary{
                 background-color: var(--color-secondary);
             }
@@ -37,27 +43,54 @@
 
 <body>
 
-    <header>
+    <header">
         <!-- Navbar -->
+        <div class="navbar px-8 lg:px-32">
+            <!-- Logo -->
+            <div class="navbar-start">
+                <img class="" src="c2-assets/logo-header.png" alt="Nature's Platter Logo">
+            </div>
+            <!-- Center Menu -->
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-lg">
+                    <li><a>Product</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- right Menu -->
+            <div class="navbar-end hidden lg:flex gap-3 text-lg">
+                <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
+                <a class="btn text-xl bg-white border border-green-400 w-28">Login</a>
+                <a class="btn text-xl bg-color-primary w-36 text-white">Register</a>
+            </div>
+            <!-- Hamburg Menu -->
+            <div class="navbar-end lg:hidden">
+                <i class="fa fa-bars fa-2x" style="color: #179800;"></i>
+            </div>
+        </div>
 
         <!-- Banner -->
-    </header>
-
-    <main>
-        <!-- Services Card Section -->
 
 
-        <!-- Popular Product Section -->
+        </header>
+
+        <main>
+            <!-- Services Card Section -->
 
 
-        <!-- Arrival & Offers Section -->
+            <!-- Popular Product Section -->
 
 
-    </main>
+            <!-- Arrival & Offers Section -->
 
-    <footer>
 
-    </footer>
+        </main>
+
+        <footer>
+
+        </footer>
 
 
 </body>
