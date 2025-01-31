@@ -40,7 +40,7 @@
         }
         @layer components{
             .ser-card{
-                @apply flex flex-col items-center bg-color-secondary p-3 rounded-lg;
+                @apply flex flex-col items-center bg-color-secondary p-8 rounded-lg;
             }
             .ser-card-img{
                 @apply bg-white p-5 rounded-[100px];
@@ -127,8 +127,8 @@
     <main>
 
         <!-- Services Card Section -->
-        <div class="p-2 lg:p-32">
-            <h1 class="text-2xl lg:text-4xl font-semibold my-2 lg:my-8 text-color-primary">
+        <div class=" p-2 lg:p-36">
+            <h1 class="text-2xl lg:text-4xl font-semibold my-2 lg:my-12 text-color-primary">
                 Services
             </h1>
             <div class="flex flex-col gap-2 lg:flex lg:flex-row lg:gap-4">
@@ -157,9 +157,9 @@
 
 
         <!-- Popular Product Section -->
-        <div class="bg-color-secondary ba p-2 lg:p-32">
+        <div class="bg-color-secondary ba p-2 lg:p-36">
             <!-- Popular Product Title -->
-            <h1 class="text-2xl lg:text-4xl font-semibold my-2 lg:my-8 text-color-primary">Popular Products</h1>
+            <h1 class="text-2xl lg:text-4xl font-semibold mb-2 lg:my-12 text-color-primary">Popular Products</h1>
 
             <!-- Popular Product Content -->
             <div class="grid md:grid-cols-3 gap-4">
@@ -284,6 +284,31 @@
 
 
         <!-- Arrival & Offers Section -->
+        <div class="bg-color-white ba p-2 lg:p-36">
+            <h1 class="text-2xl lg:text-4xl font-semibold mb-2 lg:my-12 text-color-primary">Arrival & Offers</h1>
+            <div class="flex flex-col lg:flex-row justify-between gap-4">
+                <div class="flex justify-between flex-auto bg-green-900 rounded-2xl p-8 gap-4">
+                    <div class="flex flex-col justify-between items-center">
+                        <img src="c2-assets/dawat-logo.png" alt="">
+                        <button class="btn text-sm">Cook Exotic Dishes</button>
+                        <p class="lg:text-4xl text-white">UP to <span class="lg:text-5xl font-bold text-white">20% OFF</span></p>
+                    </div>
+                    <div>
+                        <img src="c2-assets/dawat-mock-up.png" alt="">
+                    </div>
+                </div>
+                <div class="flex justify-between  bg-blue-900 rounded-2xl p-8 gap-4">
+                    <div class="flex flex-col justify-between items-center">
+                        <img src="c2-assets/india-gate-logo.png" alt="">
+                        <button class="btn">Cook Exotic Dishes</button>
+                        <p class="lg:text-4xl text-white">UP to <span class="lg:text-5xl font-bold text-white">40% OFF</span></p>
+                    </div>
+                    <div>
+                        <img src="c2-assets/india-gate-mock-up.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </main>
