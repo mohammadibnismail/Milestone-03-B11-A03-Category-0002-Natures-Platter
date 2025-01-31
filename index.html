@@ -38,6 +38,22 @@
                 background-color: var(--color-secondary);
             }
         }
+        @layer components{
+            .ser-card{
+                @apply bg-color-secondary p-3 rounded-lg flex flex-col items-center;
+            }
+            .ser-card-img{
+                @apply bg-white p-5 rounded-[100px];
+
+            }
+            .ser-card-title{
+                @apply text-2xl font-bold my-2;
+
+            }
+            .ser-card-content{
+                @apply px-5 text-center mb-5;
+            }
+        }
     </style>
 </head>
 
@@ -88,6 +104,31 @@
 
     <main>
         <!-- Services Card Section -->
+        <div class="p-2 lg:p-32">
+            <h1 class="text-2xl lg:text-4xl font-semibold my-2 lg:my-8">
+                Services
+            </h1>
+            <div class="flex flex-col gap-2 lg:flex lg:flex-row lg:gap-4">
+                <div class="ser-card">
+                    <img src="c2-assets/service.png" alt="24/7 Services" class="ser-card-img">
+                    <h2 class="ser-card-title">24/7 Services</h2>
+                    <p class="ser-card-content">Fresh vegetables, anytime, anywhere! Serving you 24/7 with the best quality and farm-fresh
+                        produce. Your trusted market, open all day, every day!</p>
+                </div>
+                <div class="ser-card">
+                    <img src="c2-assets/delivery.png" alt="24/7 Services" class="ser-card-img">
+                    <h2 class="ser-card-title">Fast Delivery</h2>
+                    <p class="ser-card-content">Fresh veggies, fast delivery! Get farm-fresh produce at your doorstep in no time. Quick, reliable, and hassle-free—because your health can't wait!</p>
+                </div>
+                <div class="ser-card">
+                    <img src="c2-assets/healthy.png" alt="24/7 Services" class="ser-card-img">
+                    <h2 class="ser-card-title">Healthy Products</h2>
+                    <p class="ser-card-content">Fresh, natural, and healthy! Our vegetable market brings you farm-fresh, nutrient-rich produce for a healthier lifestyle. Eat fresh, stay healthy—because your well-being starts with quality food!</p>
+                </div>
+            </div>
+
+        </div>
+
 
 
         <!-- Popular Product Section -->
