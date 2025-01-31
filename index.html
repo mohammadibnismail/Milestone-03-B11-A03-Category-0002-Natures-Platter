@@ -53,6 +53,28 @@
             .ser-card-content{
                 @apply px-5 text-center mb-5;
             }
+            .pro-card-item{
+                @apply bg-white shadow-md p-4 rounded-lg flex items-center gap-2;
+            }
+            .pro-card-left{
+                @apply rounded-lg bg-color-secondary;
+            }
+            .pro-card-img{
+                @apply w-16;
+            }
+            .pro-card-right{
+                @apply flex flex-col justify-between items-start;
+            }
+            .pro-card-item-rating{
+                @apply text-xs;
+            }
+            .pro-card-item-name{
+                @apply text-xl font-medium;
+            }
+            .pro-card-item-price{
+                @apply text-xs font-normal text-gray-500;
+            }
+
         }
     </style>
 </head>
@@ -106,7 +128,7 @@
 
         <!-- Services Card Section -->
         <div class="p-2 lg:p-32">
-            <h1 class="text-2xl lg:text-4xl font-semibold my-2 lg:my-8">
+            <h1 class="text-2xl lg:text-4xl font-semibold my-2 lg:my-8 text-color-primary">
                 Services
             </h1>
             <div class="flex flex-col gap-2 lg:flex lg:flex-row lg:gap-4">
@@ -132,9 +154,133 @@
                 </div>
             </div>
         </div>
-        
+
 
         <!-- Popular Product Section -->
+        <div class="bg-color-secondary ba p-2 lg:p-32">
+            <!-- Popular Product Title -->
+            <h1 class="text-2xl lg:text-4xl font-semibold my-2 lg:my-8 text-color-primary">Popular Products</h1>
+
+            <!-- Popular Product Content -->
+            <div class="grid md:grid-cols-3 gap-4">
+                <!-- Discount Banner -->
+                <div
+                    class="bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] px-8 pt-12 rounded-xl flex flex-col justify-between">
+                    <h3 class="text-3xl font-bold text-color-primary">30% off</h3>
+                    <p class="text-sm text-gray-700 py-5">Discover a world of treats, toys, and <br> essentials
+                        handpicked for </p>
+                    <button class="btn text-xl bg-white w-2/5">Buy Now</button>
+                    <div class="relative self-end">
+                        <img src="c2-assets/vegetable-offer.png" alt="Fruits">
+                    </div>
+
+                </div>
+
+                <!-- Products List by Grid -->
+                <div class="md:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-2">
+                    <!-- Product Cards -->
+                    <!-- Item 1 -->
+                    <div class="pro-card-item">
+                        <div class="pro-card-left">
+                            <img src="c2-assets/onion.png" alt="Onion" class="pro-card-img">
+                        </div>
+                        <div class="pro-card-right">
+                            <p class="pro-card-item-rating"><i class="fa fa-star" style="color: #FFC107;"></i> 4.5</p>
+                            <h4 class="pro-card-item-name">Onion 250g</h4>
+                            <p class="pro-card-item-price">$50.99</p>
+                        </Div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="pro-card-item">
+                        <div class="pro-card-left">
+                            <img src="c2-assets/onion.png" alt="Onion" class="pro-card-img">
+                        </div>
+                        <div class="pro-card-right">
+                            <p class="pro-card-item-rating"><i class="fa fa-star" style="color: #FFC107;"></i> 4.5</p>
+                            <h4 class="pro-card-item-name">Onion 500g</h4>
+                            <p class="pro-card-item-price">$50.99</p>
+                        </Div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="pro-card-item">
+                        <div class="pro-card-left">
+                            <img src="c2-assets/onion.png" alt="potato" class="pro-card-img">
+                        </div>
+                        <div class="pro-card-right">
+                            <p class="pro-card-item-rating"><i class="fa fa-star" style="color: #FFC107;"></i> 4.5</p>
+                            <h4 class="pro-card-item-name">Onion 1kg</h4>
+                            <p class="pro-card-item-price">$50.99</p>
+                        </Div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="pro-card-item">
+                        <div class="pro-card-left">
+                            <img src="c2-assets/potato.png" alt="potato" class="pro-card-img">
+                        </div>
+                        <div class="pro-card-right">
+                            <p class="pro-card-item-rating"><i class="fa fa-star" style="color: #FFC107;"></i> 4.5</p>
+                            <h4 class="pro-card-item-name">Potato 250g</h4>
+                            <p class="pro-card-item-price">$50.99</p>
+                        </Div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="pro-card-item">
+                        <div class="pro-card-left">
+                            <img src="c2-assets/potato.png" alt="potato" class="pro-card-img">
+                        </div>
+                        <div class="pro-card-right">
+                            <p class="pro-card-item-rating"><i class="fa fa-star" style="color: #FFC107;"></i> 4.5</p>
+                            <h4 class="pro-card-item-name">Potato 500g</h4>
+                            <p class="pro-card-item-price">$50.99</p>
+                        </Div>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="pro-card-item">
+                        <div class="pro-card-left">
+                            <img src="c2-assets/potato.png" alt="potato" class="pro-card-img">
+                        </div>
+                        <div class="pro-card-right">
+                            <p class="pro-card-item-rating"><i class="fa fa-star" style="color: #FFC107;"></i> 4.5</p>
+                            <h4 class="pro-card-item-name">Potato 1kg</h4>
+                            <p class="pro-card-item-price">$50.99</p>
+                        </Div>
+                    </div>
+                    <!-- Item 7 -->
+                    <div class="pro-card-item">
+                        <div class="pro-card-left">
+                            <img src="c2-assets/tomato.png" alt="Tomato" class="pro-card-img">
+                        </div>
+                        <div class="pro-card-right">
+                            <p class="pro-card-item-rating"><i class="fa fa-star" style="color: #FFC107;"></i> 4.5</p>
+                            <h4 class="pro-card-item-name">Tomato 250g</h4>
+                            <p class="pro-card-item-price">$50.99</p>
+                        </Div>
+                    </div>
+                    <!-- Item 8 -->
+                    <div class="pro-card-item">
+                        <div class="pro-card-left">
+                            <img src="c2-assets/tomato.png" alt="Tomato" class="pro-card-img">
+                        </div>
+                        <div class="pro-card-right">
+                            <p class="pro-card-item-rating"><i class="fa fa-star" style="color: #FFC107;"></i> 4.5</p>
+                            <h4 class="pro-card-item-name">Tomato 500g</h4>
+                            <p class="pro-card-item-price">$50.99</p>
+                        </Div>
+                    </div>
+                    <!-- Item 9 -->
+                    <div class="pro-card-item">
+                        <div class="pro-card-left">
+                            <img src="c2-assets/tomato.png" alt="Tomato" class="pro-card-img">
+                        </div>
+                        <div class="pro-card-right">
+                            <p class="pro-card-item-rating"><i class="fa fa-star" style="color: #FFC107;"></i> 4.5</p>
+                            <h4 class="pro-card-item-name">Tomato 1kg</h4>
+                            <p class="pro-card-item-price">$50.99</p>
+                        </Div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <!-- Arrival & Offers Section -->
